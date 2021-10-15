@@ -1,9 +1,4 @@
-/**
-* Template Name: Arsha - v4.6.0
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -255,26 +250,3 @@
   });
 
 })()
-
-$(document).ready(function () {
-  $("#sidebar").mCustomScrollbar({
-      theme: "minimal"
-  });
-
-  $('#dismiss, .overlay').on('click', function () {
-      // hide sidebar
-      $('#sidebar').removeClass('active');
-      // hide overlay
-      $('.overlay').removeClass('active');
-  });
-
-  $('#sidebarCollapse').on('click', function () {
-      // open sidebar
-      $('#sidebar').addClass('active');
-      // fade in the overlay
-      $('.overlay').addClass('active');
-      $('.collapse.in').toggleClass('in');
-      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-  });
-});
-
